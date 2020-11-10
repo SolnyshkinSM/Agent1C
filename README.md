@@ -33,3 +33,6 @@ UIKit:
 
 Foundation:
 - Timer
+
+Framework:
+- Charts
