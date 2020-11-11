@@ -2,7 +2,7 @@
 
 The iOS application interacts with the 1C accounting system.
 
-Агент 1С для iOS.
+Агент iOS для 1С.
 
 Приложение на iOS взаимодействует с учетной системой на 1С.
 
