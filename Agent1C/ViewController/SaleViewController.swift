@@ -35,11 +35,10 @@ class SaleViewController: UIViewController {
     func pieChartUpdate(results: [Sale]) {
         
         var entryArray = [PieChartDataEntry]()
-        for sale in results {
+        results.forEach { (sale) in
             let entry = PieChartDataEntry(value: Double(sale.sum), label: sale.name)
             entryArray.append(entry)
         }
-        
         
         let dataSet = PieChartDataSet(entries: entryArray, label: nil)
         
@@ -63,16 +62,6 @@ class SaleViewController: UIViewController {
     
     @IBAction func repeatPressed(_ sender: UIButton) {
         loadData()
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    }    
 
 }
